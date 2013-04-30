@@ -18,10 +18,13 @@
     </head>
     <body>
         <header>
-            <h1>Flaskr</h1>
+            <h1>Posts:</h1>
         </header>
-        <ul>
 
-        </ul>
+        {% for post in list %}
+        <article><h2>{{ post.title }}</h2>{{ post.text }}</article>
+        {% else %}
+        <h1>Unbelievable.  No entries here so far</h1>
+        {% endfor %}
     </body>
 </html>
