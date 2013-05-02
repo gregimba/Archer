@@ -1,6 +1,6 @@
 from pony.orm import *
 
-db = Database('sqlite', '/Users/grant/Documents/Flaskr/db.sqlite')
+db = Database('sqlite', '/Users/grant/Documents/Archer/db.sqlite')
 
 class Post(db.Entity):
 	"""The class that all posts are created from"""

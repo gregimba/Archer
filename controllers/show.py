@@ -8,7 +8,7 @@ show = Blueprint('show', __name__,
 
 @show.route('/show')
 def Show():
-	db = Database('sqlite', '/Users/grant/Documents/Flaskr/db.sqlite')
+	db = Database('sqlite', '/Users/grant/Documents/Archer/db.sqlite')
 	posts = []
 	for post in Post.select():
 		posts.append({"id": post.id,

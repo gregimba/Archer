@@ -9,7 +9,7 @@ new = Blueprint('new', __name__,
 
 @new.route('/new', methods=['GET', 'POST'])
 def New():
-	db = Database('sqlite', '/Users/grant/Documents/Flaskr/db.sqlite')
+	db = Database('sqlite', '/Users/grant/Documents/Archer/db.sqlite')
 
 	if request.method == 'POST':
 		newPost = Post(title=request.form['title'],text=request.form['text'])
