@@ -7,6 +7,7 @@ show = Blueprint('show', __name__,
                         template_folder='templates')
 
 @show.route('/show')
+@with_transaction
 def Show():
 	db = Database('sqlite', '/Users/grant/Documents/Archer/db.sqlite')
 	posts = []
