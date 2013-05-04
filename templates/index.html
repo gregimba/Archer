@@ -1,7 +1,7 @@
 <!DOCTYPE html>
     <head>
         <meta charset="utf-8">
-        <title>Archer</title>
+        <title>Vodka</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         
@@ -19,7 +19,20 @@
     <body>
         <header>
             <h1>Archer</h1>
-            <div>A blog using Pony and Flask -<a href="https://github.com/gregimba/Archer">Read More</a> </div>
+            <div>A blog using Pony and Flask -<a href="https://github.com/gregimba/Archer">Read More</a></div>
         </header>
+
+
+    <div id="container">
+            <time>May 03, 2013</time>
+        <div id="content">
+
+            {% for post in posts %}
+            <article><h2>{{ post.title }}</h2><p>{{ post.text }}</p></article>
+            {% else %}
+            <h2 style="margin-left: 30px;">Unbelievable, no entries here so far.</h2 style="margin-left: 30px;">
+            {% endfor %}
+        </div>
+    </div>
     </body>
 </html>
