@@ -1,21 +1,16 @@
-#Flask Imports
+#Vodka Imports
 from flask import Flask, render_template
+from flask.ext.restful import Resource, Api
+from pony.orm import *
 
 app = Flask(__name__)
+api = Api(app)
 app.config.from_pyfile('config.cfg')
 
+#controllers imports
+from controllers.index import Index
 
-#Blueprint imports
-from controllers.index import index
-app.register_blueprint(index)
-
-from controllers.new import new
-app.register_blueprint(new)
-
-#Pony ORM
-from pony.orm import *
-db = Database('sqlite', '/Users/grant/Documents/Archer/db.sqlite',create_db=True)
-from models.post import Post
+api.add_resource(Index,'/')
 
 if __name__ == '__main__':
 	app.run()
