@@ -5,10 +5,9 @@ Archer is a blog using Flask and pickle
 Getting Started
 ---------------
 
-It's super easy to get started with Vodka:
+It's super easy to get started with Archer:
 
-	git clone https://github.com/gregimba/Archer.git myblog
-	cd myblog
+	git clone https://github.com/gregimba/Archer.git
 
 Questions
 ---------

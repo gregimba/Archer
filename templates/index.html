@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Title</title>
+	<title>{{ blog_title }}</title>
 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+	<h1>{{ blog_title }}</h1>
+
+	{% for post in posts %}
+	<!-- Show blog posts using a for loop -->
+	<h2>{{ post.title }}</h2>
+	<article>{{ post.text|safe }}</article>
+	{% endfor %}
 </body>
 </html>

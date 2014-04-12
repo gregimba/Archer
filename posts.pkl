@@ -1,0 +1,18 @@
+(lp0
+(dp1
+S'text'
+p2
+S"This is a test post don't be alarmed"
+p3
+sS'title'
+p4
+S'Hello, World'
+p5
+sa(dp6
+g2
+S'This is a goodbye post, Goodbye'
+p7
+sg4
+S'Goodbye, World'
+p8
+sa.
