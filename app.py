@@ -1,11 +1,8 @@
-#Vodka Imports
 from flask import Flask, render_template
-from pony.orm import *
 
 app = Flask(__name__)
 app.config.from_pyfile('config.cfg')
 
-#Blueprint imports
 from controllers.page import index
 app.register_blueprint(index)
 

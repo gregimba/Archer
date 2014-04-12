@@ -1,17 +1,14 @@
-Vodka
+Archer
 =====
-Vodka is my own personal Flask bootstrap template for making web apps with python.
+Archer is a blog using Flask and pickle
 
 Getting Started
 ---------------
 
 It's super easy to get started with Vodka:
 
-	git clone https://github.com/gregimba/Vodka.git myapp
-	cd myapp
-
-
-Check out my blog post about why I built [Vodka](http://www.gregimba.com/vodka)
+	git clone https://github.com/gregimba/Archer.git myblog
+	cd myblog
 
 Questions
 ---------
