@@ -1,0 +1,12 @@
+
+
+html, body, div, a, p, img, ul, li, footer, header, section, span, a img, h1, h2, h3, h4, small, figure, figcaption, blockquote  {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+	text-decoration:none;
+}

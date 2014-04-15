@@ -5,14 +5,20 @@
 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style type="text/css">
+
+	</style>
+	<link rel="stylesheet" type="text/css" href="{{ url_for("static",filename="style.css") }}">
 </head>
 <body>
 	<h1>{{ blog_title }}</h1>
+	<br/>
 
 	{% for post in posts %}
 	<!-- Show blog posts using a for loop -->
 	<h2>{{ post.title }}</h2>
 	<article>{{ post.text|safe }}</article>
+	<span>{{ post.date.month }}/{{ post.date.day }}/{{ post.date.year }}</span>
 	{% endfor %}
 </body>
 </html>
