@@ -1,1 +1,0 @@
-blog_title = "Grant's Blog"

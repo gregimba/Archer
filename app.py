@@ -1,10 +1,10 @@
 from flask import Flask, render_template
 
 app = Flask(__name__)
-app.config.from_pyfile('config.cfg')
 
-from controllers.page import index
+from controllers.index import index
 app.register_blueprint(index)
 
 if __name__ == '__main__':
+	app.debug = True
 	app.run()
