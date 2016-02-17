@@ -1,14 +1,13 @@
 Archer
 =====
-Archer is a blog using Flask and pickle
+Archer is a blog using Flask
 
 Getting Started
 ---------------
 
 It's super easy to get started with Archer:
 
-	git clone https://github.com/gregimba/Archer.git
+    git clone https://github.com/gregimba/Archer.git your-blog
 
-Questions
----------
-Please feel free to email me or feel free to submit a pull request. My email is: regimbal.grant@gmail.com.
+
+Please feel free to submit a pull request
